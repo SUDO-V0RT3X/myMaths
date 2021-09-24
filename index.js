@@ -1,5 +1,7 @@
-const xA = document.getElementById("xA")
 function answer() {
-  console.log("hello")
-  document.getElementById("answerr").innerHTML = xA
+  const x = document.getElementById("x").value
+  const disp = document.getElementById("disp")
+
+  console.log(x)
+  disp.innerText = x
 }
