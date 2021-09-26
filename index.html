@@ -11,30 +11,61 @@
 
 <body>
     <h1>myMaths</h1>
-    <h2>distance formula</h2>
-    <form>
 
-        <span class="a-cor">
-            <h3>coordinate a</h3>
-            <input type="number" id="aX" placeholder="x-value" />
-            <input type="number" id="aY" placeholder="y-value" />
-        </span>
-        <br>
-        <span class="b-cor">
-            <h3>coordinate b</h3>
-            <input type="number" id="bX" placeholder="x-value" />
-            <input type="number" id="bY" placeholder="y-value" />
-        </span>
-    </form>
+    <section class="distance-formula">
+        <h2>distance formula</h2>
+        <form>
 
-    <br />
+            <span class="a-cor">
+                <h3>coordinate a</h3>
+                <input type="number" id="daX" placeholder="x-value" />
+                <input type="number" id="daY" placeholder="y-value" />
+            </span>
+            <br>
+            <span class="b-cor">
+                <h3>coordinate b</h3>
+                <input type="number" id="dbX" placeholder="x-value" />
+                <input type="number" id="dbY" placeholder="y-value" />
+            </span>
+        </form>
 
-    <span> distance =&ThinSpace; </span>
-    <span id="answer-field"> </span>
-    <br />
-    <br />
-    <button onClick="answer()">answer</button>
-    <br />
+        <br />
+
+        <span> distance =&ThinSpace; </span>
+        <span id="answer-field-d"> </span>
+        <br />
+        <br />
+        <button onClick="distance()">answer</button>
+        <br />
+    </section>
+
+
+    <section class="distance-formula">
+        <h2>midpoint formula</h2>
+        <form>
+
+            <span class="a-cor">
+                <h3>coordinate a</h3>
+                <input type="number" id="maX" placeholder="x-value" />
+                <input type="number" id="maY" placeholder="y-value" />
+            </span>
+            <br>
+            <span class="b-cor">
+                <h3>coordinate b</h3>
+                <input type="number" id="mbX" placeholder="x-value" />
+                <input type="number" id="mbY" placeholder="y-value" />
+            </span>
+        </form>
+
+        <br />
+
+        <span> midpoint =&ThinSpace; </span>
+        <span id="answer-field-m"><span>
+                <br />
+                <br />
+                <button onClick="midpoint()">answer</button>
+                <br />
+    </section>
 
     <script src="index.js"></script>
 </body>
