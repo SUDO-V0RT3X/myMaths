@@ -1,118 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myMaths</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="assets/logos/PNG/Light logo.png" type="image/x-icon">
-</head>
+    <link
+      rel="shortcut icon"
+      href="assets/logos/PNG/Light logo.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
+  <body>
+    <nav class="navbar">
+      <a onclick="showMenu()">
+        <img src="assets/logos/SVG/Dark logo.svg" />
+        <h3>myMaths</h3>
+      </a>
+    </nav>
 
-<nav class="navbar">
-    <div class="nav-left">
-    <a href="index.html">
-    <img src="assets/logos/PNG/Dark logo.png" alt="myMathsLogo" class="nav-logo">
-    </a>
-    </div>
+    <section class="main">
+      <div class="main-h">
+        <p class="mpOne">online maths calculator for south african students</p>
+        <p class="mpS">go from . . .</p>
+        <img
+          class="mGif"
+          src="assets/images/confused-math.gif"
+          alt="confused?"
+        />
 
-    <div class="nav-right">
-        <a href="index.html"> 🤫 get answers </a>
-        <a href="report.html"> 👻 report problems </a>
-    </div>
-</nav>
-
-    <h1>myMaths</h1>
-
-    <section class="distance-formula">
-        <h2>distance formula</h2>
-        <form>
-
-            <span class="a-cor">
-                <h3>coordinate a</h3>
-                <input type="number" id="daX" placeholder="x-value" />
-                <input type="number" id="daY" placeholder="y-value" />
-            </span>
-            <br>
-            <span class="b-cor">
-                <h3>coordinate b</h3>
-                <input type="number" id="dbX" placeholder="x-value" />
-                <input type="number" id="dbY" placeholder="y-value" />
-            </span>
-        </form>
-
-        <br />
-
-        <span> distance =&ThinSpace; </span>
-        <p id="answer-field-d"></p>
-        <br />
-        <br />
-        <button onClick="distance()">answer</button>
-        <br />
+        <p class="mpS">to . . .</p>
+        <img class="mImg" src="assets/images/moneymath.svg" alt="" />
+        <a class="mButton" href="calc.html">calculate now . . .</a>
+      </div>
     </section>
 
-
-    <section class="distance-formula">
-        <h2>midpoint formula</h2>
-        <form>
-
-            <span class="a-cor">
-                <h3>coordinate a</h3>
-                <input type="number" id="maX" placeholder="x-value" />
-                <input type="number" id="maY" placeholder="y-value" />
-            </span>
-            <br>
-            <span class="b-cor">
-                <h3>coordinate b</h3>
-                <input type="number" id="mbX" placeholder="x-value" />
-                <input type="number" id="mbY" placeholder="y-value" />
-            </span>
-        </form>
-
-        <br />
-
-        <span> midpoint =&ThinSpace; </span>
-        <br>
-        <span id="answer-field-m"><span>
-                <br />
-                <br />
-                <button onClick="midpoint()">answer</button>
-                <br />
-    </section>
-
-    <section class="gradient-formula">
-        <h2>gradient formula</h2>
-        <form>
-
-            <span class="a-cor">
-                <h3>coordinate a</h3>
-                <input type="number" id="gaX" placeholder="x-value" />
-                <input type="number" id="gaY" placeholder="y-value" />
-            </span>
-            <br>
-            <span class="b-cor">
-                <h3>coordinate b</h3>
-                <input type="number" id="gbX" placeholder="x-value" />
-                <input type="number" id="gbY" placeholder="y-value" />
-            </span>
-        </form>
-
-        <br />
-
-        <span> gradient =&ThinSpace; </span>
-        <br>
-        <span id="answer-field-g"><span>
-                <br />
-                <br />
-                <button onClick="gradient()">answer</button>
-                <br />
-
-    </section>
-
-    <script src="index.js"></script>
-</body>
-
+    <footer class="footer">
+      <h2>made with ❤️ by vortex - 2021</h2>
+    </footer>
+  </body>
 </html>
