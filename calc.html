@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myMaths</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="assets/logos/PNG/Light logo.png" type="image/x-icon">
-</head>
+    <link
+      rel="shortcut icon"
+      href="assets/logos/PNG/Light logo.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
-
-<nav class="navbar">
-    <div class="nav-left">
-    <a href="index.html">
-    <img src="assets/logos/PNG/Dark logo.png" alt="myMathsLogo" class="nav-logo">
-    </a>
+  <body>
+    <div id="hamburger" class="hamburger">
+      <button onclick="hideMenu()" class="hamburger-button">
+        <img src="assets/logos/SVG/Dark logo.svg" />
+      </button>
+      <div class="hamb-a">
+        <a href="index.html" class="button"> &#x1F3E0; home</a>
+        <a class="button" href="calc.html"> &#x1F440; get answers</a>
+        <a class="button" href="feedback.html"> &#x1F914; give feedback</a>
+      </div>
     </div>
+    <nav class="navbar">
+      <button onclick="showMenu()">
+        <img src="assets/logos/SVG/Dark logo.svg" />
+        <h3>myMaths</h3>
+      </button>
+    </nav>
 
-    <div class="nav-right">
-        <a href="calc.html"> 🤫 get answers </a>
-        <a href="report.html"> 👻 report problems </a>
-    </div>
-</nav>
+    <h1 class="heading"> &#x1F92B; online calculator</h1>
 
-    <h1>myMaths</h1>
-
-    <section class="distance-formula">
-        <h2>distance formula</h2>
+    <section class="distance-formula calc-section">
+        <h2 class="calc-head">distance formula</h2>
         <form>
-
-            <span class="a-cor">
+            <span class="a-cor calc-coor">
                 <h3>coordinate a</h3>
                 <input type="number" id="daX" placeholder="x-value" />
                 <input type="number" id="daY" placeholder="y-value" />
             </span>
             <br>
-            <span class="b-cor">
+            <span class="b-cor calc-coor">
                 <h3>coordinate b</h3>
                 <input type="number" id="dbX" placeholder="x-value" />
                 <input type="number" id="dbY" placeholder="y-value" />
@@ -49,23 +54,22 @@
         <span> distance =&ThinSpace; </span>
         <p id="answer-field-d"></p>
         <br />
-        <br />
         <button onClick="distance()">answer</button>
         <br />
     </section>
 
 
-    <section class="distance-formula">
-        <h2>midpoint formula</h2>
+    <section class="midpoint-formula calc-section">
+        <h2 class="calc-head">midpoint formula</h2>
         <form>
 
-            <span class="a-cor">
+            <span class="a-cor calc-coor">
                 <h3>coordinate a</h3>
                 <input type="number" id="maX" placeholder="x-value" />
                 <input type="number" id="maY" placeholder="y-value" />
             </span>
             <br>
-            <span class="b-cor">
+            <span class="b-cor calc-coor">
                 <h3>coordinate b</h3>
                 <input type="number" id="mbX" placeholder="x-value" />
                 <input type="number" id="mbY" placeholder="y-value" />
@@ -83,17 +87,17 @@
                 <br />
     </section>
 
-    <section class="gradient-formula">
-        <h2>gradient formula</h2>
+    <section class="gradient-formula calc-section">
+        <h2 class="calc-head">gradient formula</h2>
         <form>
 
-            <span class="a-cor">
+            <span class="a-cor calc-coor">
                 <h3>coordinate a</h3>
                 <input type="number" id="gaX" placeholder="x-value" />
                 <input type="number" id="gaY" placeholder="y-value" />
             </span>
             <br>
-            <span class="b-cor">
+            <span class="b-cor calc-coor">
                 <h3>coordinate b</h3>
                 <input type="number" id="gbX" placeholder="x-value" />
                 <input type="number" id="gbY" placeholder="y-value" />
@@ -112,7 +116,10 @@
 
     </section>
 
-    <script src="index.js"></script>
-</body>
+    <footer class="footer">
+      <h2>made with &#x1F49A; by vortex - 2021</h2>
+    </footer>
 
+    <script src="index.js"></script>
+  </body>
 </html>

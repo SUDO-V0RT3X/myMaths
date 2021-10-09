@@ -117,12 +117,12 @@ function gradient() {
   //console.log(ansOne, '\n', ansTwo, '\n', ansThree, '\n', ansFour)
 }
 
-var navLinks = document.getElementById("nav-links")
+var navLinks = document.getElementById("hamburger")
 
 function hideMenu() {
-  navLinks.style.right = "-200px"
+  hamburger.style.left = "-200vw"
 }
 
 function showMenu() {
-  navLinks.style.right = "0px"
+  hamburger.style.left = "0vw"
 }
