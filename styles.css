@@ -232,6 +232,11 @@ a {
   margin-left: 0;
 }
 
+.feedback{
+  width: 100vw;
+  height: 100vh;
+}
+
 @media all and (min-width: 600px) {
   html {
     display: none;
