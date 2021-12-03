@@ -25,7 +25,7 @@ a {
     text-decoration: none;
 }
 
-.navbar button {
+/*.navbar button {
     width: auto;
     height: auto;
     height: 13vh;
@@ -37,13 +37,13 @@ a {
     border-bottom: #ffffff 0.5rem solid;
     flex-direction: row;
 }
-
-.navbar button h3 {
+*/
+.navbar h3 {
     color: #ffffff;
     font-size: 2.5rem;
 }
 
-.navbar button img {
+.navbar img {
     width: 20%;
     overflow: hidden;
 }
@@ -132,6 +132,8 @@ a {
     text-align: center;
     border: #ffffff 0.25rem solid;
 }
+
+
 
 .hamburger {
     position: fixed;
