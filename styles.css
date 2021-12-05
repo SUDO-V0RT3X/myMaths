@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap");
 
+:root {
+    --pri: rgb(121, 6, 197);
+    --sec: rgb(209, 0, 146);
+    --tet: rgb(56, 255, 26);
+    --text-pri: rgb(0, 0, 0);
+    --text-sec: rgb(255, 255, 255);
+}
+
 * {
     font-family: "Titillium Web", sans-serif;
     margin: 0;
@@ -25,48 +33,92 @@ a {
     text-decoration: none;
 }
 
-/*.navbar button {
-    width: auto;
-    height: auto;
-    height: 13vh;
+.navbar {
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--text-pri);
     display: flex;
-    background-color: #1f1f1f;
-    justify-content: space-evenly;
-    align-items: center;
-    border: none;
-    border-bottom: #ffffff 0.5rem solid;
     flex-direction: row;
-}
-*/
-.navbar h3 {
-    color: #ffffff;
-    font-size: 2.5rem;
+    border-bottom: .35rem var(--text-sec) solid;
 }
 
-.navbar img {
-    width: 20%;
-    overflow: hidden;
+.nav__child1 {
+    flex-basis: 30%;
+    display: flex;
+    text-align: center;
 }
 
-.footer {
-    background-color: #000000;
-    color: #ffffff;
-    height: 8vh;
+.nav__child1 button {
+    width: 75%;
+    margin: 5%;
+    background: transparent;
+    border: none;
+}
+
+.nav__child1 button svg {
+    width: 70%;
+    fill: var(--text-sec);
+    margin: 5%;
+}
+
+.nav__child2 {
+    display: flex;
+    flex-basis: 70%;
+}
+
+.nav__child3 {
+    flex-basis: 32%;
+    display: flex;
+}
+
+.nav__child3 img {
+    width: 95%;
+    margin: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__child4 {
+    flex-basis: 48%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: #ffffff 0.5rem solid;
 }
+
+.nav__child4 h3 {
+    color: var(--text-sec);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.footer {
+    background-color: var(--text-pri);
+    color: var(--text-sec);
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: var(--text-sec) 0.5rem solid;
+}
+
+.footer h1 {
+    margin-top: 2%;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
 
 .footer h2 {
     font-size: 2rem;
     font-weight: 500;
 }
 
+
 .main {
     background: linear-gradient(to bottom,
-            rgba(150, 21, 171, 1),
-            rgba(33, 8, 27, 1));
+            var(--pri),
+            var(--sec));
 }
 
 .main-h {
@@ -77,34 +129,20 @@ a {
 }
 
 .mpOne {
-    background: #000000;
-    color: #ffffff;
+    background: var(--text-pri);
+    color: var(--text-sec);
     width: 75vw;
-    box-shadow: -1.4rem 1.4rem 0 0 rgba(58, 255, 26, 1);
     margin: 3rem;
     padding: 1.8rem;
     border-radius: 2.5rem;
     font-size: 2.5rem;
     text-align: center;
-    border: #ffffff 0.25rem solid;
-}
-
-.button {
-    background: rgba(108, 0, 192, 1);
-    color: #ffffff;
-    width: auto;
-    box-shadow: -1.4rem 1.4rem 0 0 rgba(58, 255, 26, 1);
-    margin: 2rem;
-    padding: 1.5rem;
-    border-radius: 2.5rem;
-    font-size: 2.5rem;
-    text-align: center;
-    border: #ffffff 0.25rem solid;
+    border: var(--text-pri) 0.25rem solid;
 }
 
 .mpS {
     background: transparent;
-    color: #ffffff;
+    color: var(--text-sec);
     font-size: 2.5rem;
     text-align: center;
     margin: 2rem;
@@ -121,40 +159,22 @@ a {
 }
 
 .mButton {
-    background: #000000;
-    color: #ffffff;
+    background: var(--text-pri);
+    color: var(--text-sec);
     width: 75vw;
-    box-shadow: -1.4rem 1.4rem 0 0 rgba(58, 255, 26, 1);
+    box-shadow: -1.4rem 1.4rem 0 0 var(--tet);
     margin-bottom: 6rem;
     padding: 1.8rem;
     border-radius: 2.5rem;
     font-size: 2.5rem;
     text-align: center;
-    border: #ffffff 0.25rem solid;
-}
-
-
-
-.hamburger {
-    position: fixed;
-    background: linear-gradient(to bottom, rgba(51, 51, 51, 1), rgba(0, 0, 0, 1));
-    height: 100vh;
-    width: 85vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    top: 0;
-    left: -200vw;
-    text-align: left;
-    z-index: 2;
-    border-radius: 0rem 5rem 5rem 0rem;
-    transition: 0.6s;
+    border: var(--text-sec) 0.35rem solid;
 }
 
 #hamburger {
     position: fixed;
-    background: linear-gradient(to bottom, rgba(51, 51, 51, 1), rgba(0, 0, 0, 1));
+    background: linear-gradient(rgba(121, 6, 197, 0.3), rgba(121, 6, 197, 0.3)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
     height: 100vh;
     width: 85vw;
     display: flex;
@@ -163,38 +183,75 @@ a {
     align-items: center;
     top: 0;
     left: -200vw;
+    border-right: .3rem var(--text-sec) solid;
     text-align: left;
     z-index: 2;
     border-radius: 0rem 5rem 5rem 0rem;
     transition: 0.6s;
 }
 
-.hamburger button {
+.hamburger {
+    position: fixed;
+    background: linear-gradient(rgba(121, 6, 197, 0.3), rgba(121, 6, 197, 0.3)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    height: 100vh;
+    width: 85vw;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-right: .3rem var(--text-sec) solid;
+
+    top: 0;
+    left: -200vw;
+    text-align: left;
+    z-index: 2;
+    border-radius: 0rem 5rem 5rem 0rem;
+    transition: 0.6s;
+}
+
+.hamburger-button {
+    display: flex;
+    background-color: transparent;
+    border: none;
     justify-content: center;
 }
 
-.hamburger button img {
-    width: 20vw;
-    padding: 2rem;
-
+.hamburger-button svg {
+    fill: var(--text-sec);
+    width: 15vw;
     position: fixed;
-    top: 3%;
+    top: 10%;
 }
 
 .hamb-a {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 20%;
+    top: 30%;
     justify-content: center;
     align-items: center;
 }
 
 .hamb-a a {
     font-size: 2rem;
-    width: 75%;
+    width: 85%;
 }
+
+
+.button {
+    background: var(--text-pri);
+    color: var(--text-sec);
+    width: 75vw;
+    box-shadow: -1.4rem 1.4rem 0 0 var(--tet);
+    margin-bottom: 6rem;
+    padding: 1.8rem;
+    border-radius: 2.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    border: var(--text-sec) 0.35rem solid;
+}
+
 
 .heading {
     font-size: 3.3rem;
@@ -232,9 +289,9 @@ a {
     margin-left: 0;
 }
 
-.feedback{
-  width: 100vw;
-  height: 100vh;
+.feedback {
+    width: 100vw;
+    height: 100vh;
 }
 
 @media all and (min-width: 600px) {

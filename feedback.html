@@ -11,53 +11,73 @@
 </head>
 
 <body>
+
     <div id="hamburger" class="hamburger">
+
         <button onclick="hideMenu()" class="hamburger-button">
-            <img src="assets/logos/SVG/Dark logo.svg" />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+            </svg>
         </button>
+
         <div class="hamb-a">
             <a href="index.html" class="button"> &#x1F3E0; home</a>
-            <a class="button" href="calc.html"> &#x1F440; get answers</a>
+            <a class="button" href="calc.html"> &#x1F440; resources</a>
             <a class="button" href="feedback.html"> &#x1F914; give feedback</a>
-        </div> 
+        </div>
     </div>
+
+
     <nav class="navbar">
-        <button onclick="showMenu()">
-            <img src="assets/logos/SVG/Dark logo.svg" />
-            <h3>myMaths</h3>
-        </button>
+        <div class="nav__child1">
+            <button onclick="showMenu()">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="20"></rect>
+                    <rect y="30" width="100" height="20"></rect>
+                    <rect y="60" width="100" height="20"></rect>
+                </svg>
+            </button>
+        </div>
+        <a href="index.html" class="nav__child2">
+            <div class="nav__child3">
+                <img src="assets/logos/SVG/Dark logo.svg" alt="logo">
+            </div>
+            <div class="nav__child4">
+                <h3>myMaths</h3>
+            </div>
+        </a>
     </nav>
 
     <section class="feedback">
 
-      <h2>love the site? &#x1F60D; </h2>
-      <h2>hate the site? &#x1F622; 	</h2>
+        <h2>love the site? &#x1F60D; </h2>
+        <h2>hate the site? &#x1F622; </h2>
 
-      <h1>tell us below!</h1>
+        <h1>tell us below!</h1>
 
-      <form action="">
-      <div class="feeedback__form__part">
+        <form action="">
+            <div class="feeedback__form__part">
 
-        <label for="name">your name</label>
-        <br>
-       <input type="text" name="name" id="name" placeholder="name">
+                <label for="name">your name</label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="name">
 
-      </div>
+            </div>
 
 
-      <div class="feeedback__form__part">
+            <div class="feeedback__form__part">
 
-      <label for="message">your message</label>
-        <br>
-       <input type="text" name="message" id="message" placeholder="message">
-       
-      </div>
-      <div class="feeedback__form__part">
+                <label for="message">your message</label>
+                <br>
+                <input type="text" name="message" id="message" placeholder="message">
 
-       <input type="submit" name="submit" id="submit" value="submit">
-      </div>
+            </div>
+            <div class="feeedback__form__part">
 
-      </form>
+                <input type="submit" name="submit" id="submit" value="submit">
+            </div>
+
+        </form>
 
     </section>
 

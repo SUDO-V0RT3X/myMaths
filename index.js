@@ -5,10 +5,6 @@ function distance() {
     var bY = parseFloat(document.getElementById("dbY").value) || 0;
     var answerField = document.getElementById("answer-field-d")
 
-
-
-
-
     var doneX = (bX - aX) * (bX - aX)
     var doneY = (bY - aY) * (bY - aY)
     var doneA = doneX + doneY
@@ -72,7 +68,7 @@ function distance() {
         "</br>" +
         answerF
 
-    // console.log(ansOne, '\n', ansTwo, '\n', ansThree, '\n', ansFour, '\n', ansFive)
+    console.log(ansOne, '\n', ansTwo, '\n', ansThree, '\n', ansFour, '\n', ansFive)
 }
 
 function midpoint() {
@@ -96,7 +92,7 @@ function midpoint() {
     answerField.innerHTML =
         ansOne + "<br>" + ansTwo + "<br>" + ansThree + "<br>" + ansFour + "<br>"
 
-    //console.log(answerx + " ; " + answery)
+    console.log(answerx + " ; " + answery)
 }
 
 function gradient() {
@@ -118,7 +114,7 @@ function gradient() {
     answerField.innerHTML =
         ansOne + "<br>" + ansTwo + "<br>" + ansThree + "<br>" + ansFour
 
-    //console.log(ansOne, '\n', ansTwo, '\n', ansThree, '\n', ansFour)
+    console.log(ansOne, '\n', ansTwo, '\n', ansThree, '\n', ansFour)
 }
 
 var navLinks = document.getElementById("hamburger")
