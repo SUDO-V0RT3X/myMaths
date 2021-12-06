@@ -27,7 +27,6 @@
         </div>
     </div>
 
-
     <nav class="navbar">
         <div class="nav__child1">
             <button onclick="showMenu()">
@@ -50,35 +49,57 @@
 
     <section class="feedback">
 
-        <h2>love the site? &#x1F60D; </h2>
-        <h2>hate the site? &#x1F622; </h2>
+        <h3 class="headings"> &#x1F914; give us feedback</h3>
 
-        <h1>tell us below!</h1>
+        <h2> &#x1F60D; love the site?</h2>
+        <h2> &#x1F622; hate the site?</h2>
+        <div class="inside-link">
+            <a href="#feedback-form">tell us below!</a>
+        </div>
 
-        <form action="">
+        <form id="feedback-form" action="results.html" method="GET">
+
             <div class="feeedback__form__part">
-
                 <label for="name">your name</label>
                 <br>
                 <input type="text" name="name" id="name" placeholder="name">
+            </div>
 
+            <div class="feeedback__form__part">
+                <label for="rating">rate our site from &#x1F92E; to &#x1F525; </label>
+                <br>
+                <input type="range" name="rating" id="rating" min="0" max="100" step="10">
+            </div>
+
+            <div class="alt__feeedback__form__part">
+                <h2>where can we improve?</h2>
+                <input type="checkbox" name="improveOne" id="improveOne">
+                <label for="improveOne">user interface</label><br>
+                <input type="checkbox" name="improveTwo" id="improveTwo">
+                <label for="improveTwo">more resources!!!</label><br>
+                <input type="checkbox" name="improveThree" id="improveThree">
+                <label for="improveThree">more convenient experience</label><br>              
             </div>
 
 
-            <div class="feeedback__form__part">
+            <div class="alt__feeedback__form__part">
+                <h2>would you recommend myMaths to anyone?</h2>
+                <br>
+                <input type="radio" name="recOne" id="recOne">
+                <label for="recOne">yasssss</label><br>
+                <input type="radio" name="recTwo" id="recTwo">
+                <label for="recTwo">nah</label><br>
+            </div>
 
+            <div class="feeedback__form__part">
                 <label for="message">your message</label>
                 <br>
                 <input type="text" name="message" id="message" placeholder="message">
-
-            </div>
-            <div class="feeedback__form__part">
-
-                <input type="submit" name="submit" id="submit" value="submit">
             </div>
 
+            <button type="reset">reset</button>
+            <button type="submit">submit</button>
         </form>
-
     </section>
 
     <footer class="footer">

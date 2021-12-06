@@ -140,6 +140,7 @@ a {
     border: var(--text-pri) 0.25rem solid;
 }
 
+
 .mpS {
     background: transparent;
     color: var(--text-sec);
@@ -289,9 +290,48 @@ a {
     margin-left: 0;
 }
 
+
+.headings {
+    background: var(--text-pri);
+    color: var(--text-sec);
+    margin: 3rem;
+    padding: 1.8rem;
+    border-radius: 2.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    border: var(--text-sec) 0.25rem solid;
+}
+
+
 .feedback {
-    width: 100vw;
-    height: 100vh;
+    height: auto;
+    padding: 5vw;
+    color: var(--text-sec);
+    background: linear-gradient(rgba(121, 6, 197, 0.3), rgba(121, 6, 197, 0.3)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+}
+
+
+.feedback h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+
+
+.inside-link {
+    background: var(--text-pri);
+    width: 50vw;
+    margin: 2rem auto 6rem auto;
+    box-shadow: -1.4rem 1.4rem 0 0 var(--tet);
+    padding: 1.8rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    border: var(--text-sec) 0.35rem solid;
+}
+
+.inside-link a {
+    font-size: 2.5rem;
+    color: var(--text-sec);
 }
 
 @media all and (min-width: 600px) {
