@@ -370,23 +370,26 @@ a {
 
 .alt__feedback__form__part {
     display: inline;
+
     flex-direction: column;
     margin-bottom: 10vw;
 }
 
 .alt__feedback__form__part h2 {
     font-size: 2rem;
+    text-align: left;
+    font-family: "Titillium Web", sans-serif;
+
 }
 
 .alt__feedback__form__part label {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .alt__feedback__form__part input {
     width: 5vw;
     height: 5vw;
     margin: auto;
-    padding: 50px;
 }
 
 
