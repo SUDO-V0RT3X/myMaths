@@ -363,15 +363,14 @@ a {
 
 .feedback__form__part input {
     width: 75vw;
+    padding-left: 2vw;
     margin: auto;
     padding-bottom: 0;
     font-size: 2rem;
 }
 
-.alt__feedback__form__part {
-    display: inline;
 
-    flex-direction: column;
+.alt__feedback__form__part {
     margin-bottom: 10vw;
 }
 
@@ -387,10 +386,93 @@ a {
 }
 
 .alt__feedback__form__part input {
-    width: 5vw;
-    height: 5vw;
-    margin: auto;
+    width: 1.7rem;
+    height: 1.7rem;
+    text-align: center;
+    margin-right: 2.5vw;
+
 }
+
+
+.alt__alt__feedback__form__part {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vw;
+}
+
+.alt__alt__feedback__form__part label {
+    font-size: 2rem;
+    padding-bottom: 2%;
+}
+
+.alt__alt__feedback__form__part textarea {
+    width: 75vw;
+    margin: auto;
+    padding: 2vw 2vw 2vw 4vw;
+    border-radius: 2.5rem;
+    font-size: 2rem;
+}
+
+input[type=reset] {
+    width: 40vw;
+    background-color: rgb(102, 4, 4);
+    color: var(--text-sec);
+    border: var(--text-sec) 0.35rem solid;
+    border-radius: 1.4rem;
+    margin: 1.5vw;
+    font-size: 2rem;
+    height: 15vw;
+    display: inline;
+}
+
+input[type=submit] {
+    width: 40vw;
+    background-color: rgb(27, 102, 4);
+    color: var(--text-sec);
+    border: var(--text-sec) 0.35rem solid;
+    border-radius: 1.4rem;
+    font-size: 2rem;
+    margin: 1.5vw;
+    display: inline;
+}
+
+.feedback__buttons {
+    display: flex;
+}
+
+.results {
+    height: 70vh;
+    padding: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-sec);
+    background: linear-gradient(rgba(121, 6, 197, 0.3), rgba(121, 6, 197, 0.3)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+
+}
+
+.results h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.altButton {
+    background: var(--text-pri);
+    color: var(--text-sec);
+    width: 75vw;
+    box-shadow: -1.4rem 1.4rem 0 0 var(--tet);
+    margin-bottom: 6rem;
+    padding: 1.8rem;
+    border-radius: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    border: var(--text-sec) 0.35rem solid;
+}
+
 
 
 
