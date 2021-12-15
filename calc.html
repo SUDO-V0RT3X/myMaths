@@ -11,9 +11,7 @@
 </head>
 
 <body>
-
     <div id="hamburger" class="hamburger">
-
         <button onclick="hideMenu()" class="hamburger-button">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
@@ -38,6 +36,7 @@
                 </svg>
             </button>
         </div>
+
         <a href="index.html" class="nav__child2">
             <div class="nav__child3">
                 <img src="assets/logos/SVG/Dark logo.svg" alt="logo">
@@ -49,93 +48,92 @@
     </nav>
 
     <section class="calc">
-    
         <h1 class="headings"> &#x1F440; resources</h1>
 
-    <section class="distance-formula calc-section">
-        <h2 class="calc-head">distance formula</h2>
-        <form>
-            <span class="a-cor calc-coor">
-                <h3>coordinate a</h3>
-                <input type="number" id="daX" placeholder="x-value" />
-                <input type="number" id="daY" placeholder="y-value" />
-            </span>
-            <br>
-            <span class="b-cor calc-coor">
-                <h3>coordinate b</h3>
-                <input type="number" id="dbX" placeholder="x-value" />
-                <input type="number" id="dbY" placeholder="y-value" />
-            </span>
-        </form>
+        <section class="distance-formula calc-section">
+            <h2 class="calc-head">distance formula</h2>
+            <form>
+                <span class="a-cor calc-coor">
+                    <h3>coordinate a</h3>
+                    <input type="number" id="daX" placeholder="x-value" />
+                    <input type="number" id="daY" placeholder="y-value" />
+                </span>
+                <br>
+                <span class="b-cor calc-coor">
+                    <h3>coordinate b</h3>
+                    <input type="number" id="dbX" placeholder="x-value" />
+                    <input type="number" id="dbY" placeholder="y-value" />
+                </span>
+            </form>
 
-        <br />
+            <br />
 
-        <span class="calc__answer__heading"> distance =&ThinSpace; </span>
-        <p id="answer-field-d" class="calc__answer__field"></p>
-        <br />
-        <button onClick="distance()" class="calc__answer__button">answer</button>
-        <br />
+            <span class="calc__answer__heading"> distance =&ThinSpace; </span>
+            <p id="answer-field-d" class="calc__answer__field"></p>
+            <br />
+            <button onClick="distance()" class="calc__answer__button">answer</button>
+            <br />
+        </section>
+
+        <section class="midpoint-formula calc-section">
+            <h2 class="calc-head">midpoint formula</h2>
+            <form>
+
+                <span class="a-cor calc-coor">
+                    <h3>coordinate a</h3>
+                    <input type="number" id="maX" placeholder="x-value" />
+                    <input type="number" id="maY" placeholder="y-value" />
+                </span>
+                <br>
+                <span class="b-cor calc-coor">
+                    <h3>coordinate b</h3>
+                    <input type="number" id="mbX" placeholder="x-value" />
+                    <input type="number" id="mbY" placeholder="y-value" />
+                </span>
+            </form>
+
+            <br />
+            <span class="calc__answer__heading"> midpoint =&ThinSpace; </span>
+            <p id="answer-field-m" class="calc__answer__field"></p>
+            <br />
+            <button onClick="midpoint()" class="calc__answer__button">answer</button>
+            <br />
+        </section>
+
+        <section class="gradient-formula calc-section">
+            <h2 class="calc-head">gradient formula</h2>
+            <form>
+
+                <span class="a-cor calc-coor">
+                    <h3>coordinate a</h3>
+                    <input type="number" id="gaX" placeholder="x-value" />
+                    <input type="number" id="gaY" placeholder="y-value" />
+                </span>
+                <br>
+                <span class="b-cor calc-coor">
+                    <h3>coordinate b</h3>
+                    <input type="number" id="gbX" placeholder="x-value" />
+                    <input type="number" id="gbY" placeholder="y-value" />
+                </span>
+            </form>
+
+            <br />
+
+            <br />
+            <span class="calc__answer__heading"> gradient =&ThinSpace; </span>
+            <p id="answer-field-g" class="calc__answer__field"></p>
+            <br />
+            <button onClick="gradient()" class="calc__answer__button">answer</button>
+            <br />
+        </section>
     </section>
-
-
-    <section class="midpoint-formula calc-section">
-        <h2 class="calc-head">midpoint formula</h2>
-        <form>
-
-            <span class="a-cor calc-coor">
-                <h3>coordinate a</h3>
-                <input type="number" id="maX" placeholder="x-value" />
-                <input type="number" id="maY" placeholder="y-value" />
-            </span>
-            <br>
-            <span class="b-cor calc-coor">
-                <h3>coordinate b</h3>
-                <input type="number" id="mbX" placeholder="x-value" />
-                <input type="number" id="mbY" placeholder="y-value" />
-            </span>
-        </form>
-
-        <br />   
-        <span class="calc__answer__heading"> midpoint =&ThinSpace; </span>
-        <p id="answer-field-m" class="calc__answer__field"></p>
-        <br />
-        <button onClick="midpoint()"  class="calc__answer__button">answer</button>
-        <br />
-    </section>
-
-    <section class="gradient-formula calc-section">
-        <h2 class="calc-head">gradient formula</h2>
-        <form>
-
-            <span class="a-cor calc-coor">
-                <h3>coordinate a</h3>
-                <input type="number" id="gaX" placeholder="x-value" />
-                <input type="number" id="gaY" placeholder="y-value" />
-            </span>
-            <br>
-            <span class="b-cor calc-coor">
-                <h3>coordinate b</h3>
-                <input type="number" id="gbX" placeholder="x-value" />
-                <input type="number" id="gbY" placeholder="y-value" />
-            </span>
-        </form>
-
-        <br />
-
-        <br />   
-        <span class="calc__answer__heading"> gradient =&ThinSpace; </span>
-        <p id="answer-field-g" class="calc__answer__field"></p>
-        <br />
-        <button onClick="gradient()"  class="calc__answer__button">answer</button>
-        <br />
-    </section>
-</section>
 
     <footer class="footer">
         <h2>made with &#x1F49A; by V0RT3X - 2021</h2>
     </footer>
 
     <script src="index.js"></script>
+
 </body>
 
 </html>
