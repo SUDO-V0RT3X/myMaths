@@ -260,36 +260,77 @@ a {
     text-align: center;
 }
 
+.calc {
+    height: auto;
+    padding: 5vw;
+    color: var(--text-sec);
+    background: linear-gradient(rgba(121, 6, 197, 0.3), rgba(121, 6, 197, 0.3)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+}
+
+.calc-section {
+    background: linear-gradient(rgba(209, 0, 146, 0.4), rgba(209, 0, 146, 0.4)),
+    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    padding: 5vw;
+    padding-bottom: 10vw;
+    margin-bottom: 7vw;
+    border-radius: 2.5rem;
+    border: 5px var(--text-sec) solid;
+
+}
+
 .calc-head {
-    font-size: 2.2rem;
+    font-size: 3rem;
     padding: 1rem;
-    text-align: left;
+    text-align: center;
 }
 
 .calc-coor {
     padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
     margin: 0.5rem;
     margin-bottom: 0;
+    color: var(--text-sec);
     padding-bottom: 0;
 }
 
 .calc-coor h3 {
     font-family: "Titillium Web", sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding-bottom: 1rem;
 }
 
 .calc-coor input {
-    width: 40vw;
+    display: inline-block;
     height: 5vh;
+    width: 25vw;
     padding: 1rem;
-    font-size: 1.5rem;
-    margin: 1.2rem;
-    margin-left: 0;
+    font-size: 2rem;
+    margin: 3vw;
 }
 
+.calc__answer__heading {
+    font-size: 1.9rem;
+}
+
+.calc__answer__field {
+    font-size: 1.6rem;
+}
+
+.calc__answer__button {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40vw;
+    background-color: rgb(27, 102, 4);
+    color: var(--text-sec);
+    border: var(--text-sec) 0.35rem solid;
+    border-radius: 1.4rem;
+    font-size: 2rem;
+    margin-bottom: 10000px;
+    display: inline;
+    
+}
 
 .headings {
     background: var(--text-pri);
@@ -441,7 +482,7 @@ input[type=submit] {
 }
 
 .results {
-    height: 70vh;
+    height: 80vh;
     padding: 5vw;
     display: flex;
     justify-content: space-evenly;
@@ -472,9 +513,6 @@ input[type=submit] {
     text-align: center;
     border: var(--text-sec) 0.35rem solid;
 }
-
-
-
 
 @media all and (min-width: 600px) {
     html {

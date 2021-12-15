@@ -48,7 +48,9 @@
         </a>
     </nav>
 
-    <h1 class="heading"> &#x1F92B; online calculator</h1>
+    <section class="calc">
+    
+        <h1 class="headings"> &#x1F440; resources</h1>
 
     <section class="distance-formula calc-section">
         <h2 class="calc-head">distance formula</h2>
@@ -68,10 +70,10 @@
 
         <br />
 
-        <span> distance =&ThinSpace; </span>
-        <p id="answer-field-d"></p>
+        <span class="calc__answer__heading"> distance =&ThinSpace; </span>
+        <p id="answer-field-d" class="calc__answer__field"></p>
         <br />
-        <button onClick="distance()">answer</button>
+        <button onClick="distance()" class="calc__answer__button">answer</button>
         <br />
     </section>
 
@@ -93,15 +95,12 @@
             </span>
         </form>
 
+        <br />   
+        <span class="calc__answer__heading"> midpoint =&ThinSpace; </span>
+        <p id="answer-field-m" class="calc__answer__field"></p>
         <br />
-
-        <span> midpoint =&ThinSpace; </span>
-        <br>
-        <span id="answer-field-m"><span>
-                <br />
-                <br />
-                <button onClick="midpoint()">answer</button>
-                <br />
+        <button onClick="midpoint()"  class="calc__answer__button">answer</button>
+        <br />
     </section>
 
     <section class="gradient-formula calc-section">
@@ -123,15 +122,14 @@
 
         <br />
 
-        <span> gradient =&ThinSpace; </span>
-        <br>
-        <span id="answer-field-g"><span>
-                <br />
-                <br />
-                <button onClick="gradient()">answer</button>
-                <br />
-
+        <br />   
+        <span class="calc__answer__heading"> gradient =&ThinSpace; </span>
+        <p id="answer-field-g" class="calc__answer__field"></p>
+        <br />
+        <button onClick="gradient()"  class="calc__answer__button">answer</button>
+        <br />
     </section>
+</section>
 
     <footer class="footer">
         <h2>made with &#x1F49A; by V0RT3X - 2021</h2>
