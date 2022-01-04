@@ -117,7 +117,7 @@ function gradient() {
     console.log(ansOne, '\n', ansTwo, '\n', ansThree, '\n', ansFour)
 }
 
-var navLinks = document.getElementById("hamburger")
+var hamburger = document.getElementById("nav-links")
 
 function hideMenu() {
     hamburger.style.left = "-200vw"

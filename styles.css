@@ -33,6 +33,7 @@ h6 {
 
 a {
     text-decoration: none;
+    color: var(--text-sec);
 }
 
 .button {
@@ -76,104 +77,34 @@ a {
 
 /*      NAV BAR     */
 
-.navbar {
-    width: 100vw;
-    height: 10vh;
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2% 6%;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: var(--text-pri);
-    display: flex;
-    flex-direction: row;
-    border-bottom: .35rem var(--text-sec) solid;
-}
-
-.nav__child1 {
-    flex-basis: 30%;
-    display: flex;
-    text-align: center;
-}
-
-.nav__child1 button {
-    width: 75%;
-    margin: 5%;
-    background: transparent;
-    border: none;
-}
-
-.nav__child1 button svg {
-    width: 70%;
-    fill: var(--text-sec);
-    margin: 5%;
-}
-
-.nav__child2 {
-    display: flex;
-    flex-basis: 70%;
-}
-
-.nav__child3 {
-    flex-basis: 32%;
-    display: flex;
-}
-
-.nav__child3 img {
-    width: 95%;
-    margin: 10%;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav__child4 {
-    flex-basis: 48%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav__child4 h3 {
     color: var(--text-sec);
+    height: 10vh;
+    border-bottom: var(--text-sec) .7vh solid;
+}
+
+.nav__home__link {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav__home__link img {
+    width: 15vw;
+    padding-right: 5vw;
+}
+
+.nav__home__link h1 {
     font-size: 3rem;
-    text-align: center;
 }
 
-/*      HAMBURGER       */
-
-#hamburger {
-    position: fixed;
-    background: linear-gradient(rgba(121, 6, 197, 0.3), rgba(121, 6, 197, 0.3)),
-        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-    height: 100vh;
-    width: 85vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    top: 0;
-    left: -200vw;
-    border-right: .3rem var(--text-sec) solid;
-    text-align: left;
-    z-index: 2;
-    border-radius: 0rem 5rem 5rem 0rem;
-    transition: 0.6s;
-}
-
-.hamburger {
-    position: fixed;
-    background: linear-gradient(rgba(121, 6, 197, 0.3), rgba(121, 6, 197, 0.3)),
-        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-    height: 100vh;
-    width: 85vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border-right: .3rem var(--text-sec) solid;
-
-    top: 0;
-    left: -200vw;
-    text-align: left;
-    z-index: 2;
-    border-radius: 0rem 5rem 5rem 0rem;
-    transition: 0.6s;
-}
 
 .hamburger-button {
     display: flex;
@@ -189,20 +120,68 @@ a {
     top: 10%;
 }
 
-.hamb-a {
+.hamburger-alt-button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+}
+
+.hamburger-alt-button svg {
+    fill: var(--text-sec);
+    width: 15vw;
+}
+
+
+/*      HAMBURGER       */
+/* ISSUE IS HERE!!!!
+#nav-links {
+    position: fixed;
+    background: linear-gradient(rgba(121, 6, 197, 0.3), rgba(121, 6, 197, 0.3)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    height: 100vh;
+    width: 85vw;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 30%;
     justify-content: center;
     align-items: center;
+    border-right: .3rem var(--text-sec) solid;
+    top: 0;
+    left: -200vw;
+    text-align: left;
+    z-index: 2;
+    border-radius: 0rem 5rem 5rem 0rem;
+    transition: 0.6s;
 }
 
-.hamb-a a {
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 75vw;
+}
+
+.nav-links ul li {
+    margin: 4rem;
+    list-style: none;
+    width: 75vw;
+    text-align: center;
+}
+
+
+.nav-links ul li a {
+    background: var(--text-pri);
+    color: var(--text-sec);
+    padding: 2rem 4rem;
+    box-shadow: -1.4rem 1.4rem 0 0 var(--tet);
+    margin-bottom: 6rem;
+    border-radius: 2.5rem;
     font-size: 2rem;
-    width: 85%;
-}
+    text-align: center;
+    border: var(--text-sec) 0.35rem solid;
 
+}
+*/
 /*      FOOTER        */
 
 .footer {
@@ -529,9 +508,82 @@ input[type=submit] {
     margin-bottom: 1rem;
 }
 
+@media screen and (min-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--text-pri);
+        color: var(--text-sec);
+        height: 10vh;
+        border-bottom: var(--text-sec) .7vh solid;
+    }
 
-@media all and (min-width: 600px) {
-    html {
+
+    .nav__home__link {
+        font-size: 4rem;
+        display: flex;
+        width: 24vw;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav__home__link img {
+        width: 6vw;
+        padding-right: 1vw;
+    }
+
+    .nav__home__link h1 {
+        font-size: 4rem;
+    }
+
+    .nav-links {
+        flex: 1;
+        text-align: right;
+    }
+
+    .nav-links ul {
+        display: inline;
+    }
+
+    .nav-links ul li {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+
+    .nav-links ul li a {
+        color: var(--text-sec);
+        text-decoration: none;
+        font-size: 2rem;
+        background: none;
+        padding: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        border-radius: 0;
+        text-align: center;
+        border: none;
+
+    }
+
+    #current-page {
+        color: var(--sec);
+
+    }
+
+
+    .nav-links ul li a:hover {
+        color: var(--tet);
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .hamburger-button,
+    .hamburger-alt-button {
         display: none;
     }
+
 }
