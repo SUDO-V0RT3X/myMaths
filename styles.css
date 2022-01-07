@@ -134,7 +134,10 @@ nav {
 
 
 /*      HAMBURGER       */
-/* ISSUE IS HERE!!!!
+#alt-nav-links {
+    display: none;
+}
+
 #nav-links {
     position: fixed;
     background: linear-gradient(rgba(121, 6, 197, 0.3), rgba(121, 6, 197, 0.3)),
@@ -154,14 +157,14 @@ nav {
     transition: 0.6s;
 }
 
-.nav-links ul {
+#nav-links ul {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 75vw;
 }
 
-.nav-links ul li {
+#nav-links ul li {
     margin: 4rem;
     list-style: none;
     width: 75vw;
@@ -169,7 +172,7 @@ nav {
 }
 
 
-.nav-links ul li a {
+#nav-links ul li a {
     background: var(--text-pri);
     color: var(--text-sec);
     padding: 2rem 4rem;
@@ -181,7 +184,7 @@ nav {
     border: var(--text-sec) 0.35rem solid;
 
 }
-*/
+
 /*      FOOTER        */
 
 .footer {
@@ -539,23 +542,29 @@ input[type=submit] {
         font-size: 4rem;
     }
 
-    .nav-links {
+    #nav-links {
+        display: none;
+    }
+
+
+    #alt-nav-links {
+        display: block;
         flex: 1;
         text-align: right;
     }
 
-    .nav-links ul {
+    #alt-nav-links ul {
         display: inline;
     }
 
-    .nav-links ul li {
+    #alt-nav-links ul li {
         text-decoration: none;
         display: inline-block;
         padding: 8px 12px;
         position: relative;
     }
 
-    .nav-links ul li a {
+    #alt-nav-links ul li a {
         color: var(--text-sec);
         text-decoration: none;
         font-size: 2rem;
@@ -575,7 +584,7 @@ input[type=submit] {
     }
 
 
-    .nav-links ul li a:hover {
+    #alt-nav-links ul li a:hover {
         color: var(--tet);
         transition: .5s;
         cursor: pointer;
