@@ -11,44 +11,104 @@
 </head>
 
 <body>
-    <div id="hamburger" class="hamburger">
-        <button onclick="hideMenu()" class="hamburger-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
-            </svg>
-        </button>
 
-        <div class="hamb-a">
-            <a href="index.html" class="button"> &#x1F3E0; home</a>
-            <a class="button" href="calc.html"> &#x1F440; resources</a>
-            <a class="button" href="feedback.html"> &#x1F914; give feedback</a>
-        </div>
-    </div>
+    <nav>
+        <a href="index.html" class="nav__home__link">
+            <img src="assets/logos/SVG/Dark logo.svg" alt="logo" />
+            <h1>myMaths</h1>
+        </a>
 
-
-    <nav class="navbar">
-        <div class="nav__child1">
-            <button onclick="showMenu()">
-                <svg viewBox="0 0 100 80" width="40" height="40">
-                    <rect width="100" height="20"></rect>
-                    <rect y="30" width="100" height="20"></rect>
-                    <rect y="60" width="100" height="20"></rect>
+        <div id="nav-links">
+            <button onclick="hideMenu()" class="hamburger-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
                 </svg>
             </button>
-        </div>
 
-        <a href="index.html" class="nav__child2">
-            <div class="nav__child3">
-                <img src="assets/logos/SVG/Dark logo.svg" alt="logo">
-            </div>
-            <div class="nav__child4">
-                <h3>myMaths</h3>
-            </div>
-        </a>
+            <ul>
+                <li>
+                    <a href="index.html" id="current-page"> &#x1F3E0; home</a>
+                </li>
+                <li>
+                    <a href=" calc.html"> &#x1F440; resources</a>
+                </li>
+                <li>
+                    <a href="feedback.html"> &#x1F914; give feedback</a>
+                </li>
+            </ul>
+        </div>
+        <div id="alt-nav-links">
+            <button onclick="hideMenu()" class="hamburger-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                </svg>
+            </button>
+
+            <ul>
+                <li>
+                    <a href="index.html" id="current-page"> &#x1F3E0; home</a>
+                </li>
+                <li>
+                    <a href=" calc.html"> &#x1F440; resources</a>
+                </li>
+                <li>
+                    <a href="feedback.html"> &#x1F914; give feedback</a>
+                </li>
+            </ul>
+        </div>
+        <button onclick="showMenu()" class="hamburger-alt-button">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+        </button>
     </nav>
 
-    <section class="calc">
+    <section class="choose__grade">
         <h1 class="headings"> &#x1F440; resources</h1>
+
+        <button id="g10button" class="button grade__button">grade 10</button>
+
+        <button id="g11button" class="button grade__button">grade 11</button>
+    </section>
+
+    <section id="grade10">
+
+
+
+
+
+
+    </section>
+
+    <section id="grade11">
+
+
+
+
+    </section>
+
+    <!--    <section class="res__template">
+
+        <section class="inner__res__template">
+            <h1>heading of topic</h1>
+            <h2>topic tree</h2>
+            <div class="res__summary">
+                <h1>summary:</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad expedita nobis dolorum quia sit tempore assumenda odit ea quam adipisci quae quasi asperiores quis suscipit commodi nemo, quisquam fugiat dolorem!</p>
+
+                <input type="button" onclick="location.href='https://google.com';" value="download pdf" />
+            </div>
+
+            <div class="res__calc">
+                <h1>calculators:</h1>
+            </div>
+        </section>
+    </section>-->
+
+
+    <section class="calc">
 
         <section class="distance-formula calc-section">
             <h2 class="calc-head">distance formula</h2>

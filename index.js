@@ -117,6 +117,7 @@ function gradient() {
     console.log(ansOne, '\n', ansTwo, '\n', ansThree, '\n', ansFour)
 }
 
+
 var hamburger = document.getElementById("nav-links")
 
 function hideMenu() {
@@ -126,3 +127,24 @@ function hideMenu() {
 function showMenu() {
     hamburger.style.left = "0vw"
 }
+
+
+var g10button = document.getElementById('g10button');
+g10button.onclick = function() {
+    var g10 = document.getElementById("grade10");
+    if (g10.style.display !== 'block') {
+        g10.style.display = 'block';
+    } else {
+        g10.style.display = 'none';
+    }
+};
+
+var g11button = document.getElementById('g11button');
+g11button.onclick = function() {
+    var g11 = document.getElementById("grade11");
+    if (g11.style.display !== 'block') {
+        g11.style.display = 'block';
+    } else {
+        g11.style.display = 'none';
+    }
+};

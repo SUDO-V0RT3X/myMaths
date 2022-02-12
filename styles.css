@@ -279,6 +279,61 @@ nav {
 
 /*      RESOURCES PAGE      */
 
+.res__template {
+    height: auto;
+    padding: 5vw;
+    color: var(--text-sec);
+    background: linear-gradient(rgba(121, 6, 197, 0.3), rgba(121, 6, 197, 0.3)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+}
+
+.inner__res__template {
+    background: linear-gradient(rgba(209, 0, 146, 0.4), rgba(209, 0, 146, 0.4)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    padding: 5vw;
+    padding-bottom: 10vw;
+    margin-bottom: 7vw;
+    border-radius: 2.5rem;
+    border: 5px var(--text-sec) solid;
+
+}
+
+.inner__res__template h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.inner__res__template h2 {
+    font-size: 2rem;
+}
+
+.res__summary h1 {
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+.res__summary p {
+    font-size: 1.5rem;
+}
+
+.res__summary input {
+    background: var(--text-pri);
+    color: var(--text-sec);
+    width: auto;
+    padding: 1.3rem;
+    margin: 2rem 0;
+    border-radius: 2.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+    border: var(--text-sec) 0.35rem solid;
+    box-shadow: -.7rem .7rem 0 0 var(--tet);
+}
+
+
 .calc {
     height: auto;
     padding: 5vw;
@@ -348,7 +403,43 @@ nav {
     font-size: 2rem;
     margin-bottom: 10000px;
     display: inline;
+}
 
+.choose__grade {
+    background: linear-gradient(rgba(121, 6, 197, 0.3), rgba(121, 6, 197, 0.3)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose__grade h1 {
+    padding-right: 20vw;
+    padding-left: 20vw;
+    margin: 7rem 0;
+}
+
+.grade__button {
+    width: 50vw;
+}
+
+#grade10 {
+    height: auto;
+    width: 100vw;
+    padding: 2vw;
+    background: linear-gradient(rgba(121, 6, 197, 0.3), rgba(121, 6, 197, 0.3)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    display: none;
+}
+
+#grade11 {
+    height: auto;
+    width: 100vw;
+    padding: 2vw;
+    background: linear-gradient(rgba(121, 6, 197, 0.3), rgba(121, 6, 197, 0.3)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    display: none;
 }
 
 /*      FEEDBACK PAGE       */
@@ -510,6 +601,8 @@ input[type=submit] {
     text-align: center;
     margin-bottom: 1rem;
 }
+
+
 
 @media screen and (min-width: 800px) {
     nav {
